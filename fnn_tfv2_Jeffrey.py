@@ -23,7 +23,7 @@ model = tf.keras.models.Sequential([
 # def optimizer
 opt = tf.keras.optimizers.Adam(learning_rate=0.001)
 
-# model.compile(optimizer='adam', loss='mean_squared_error')
+# define model
 model.compile(optimizer=opt, loss=my_loss_fn)
 model.fit(train_x, train_y, epochs=10000, batch_size=1024)
 pred_y = model.predict(test_x)
