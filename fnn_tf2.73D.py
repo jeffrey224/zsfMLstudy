@@ -19,7 +19,7 @@ model = tf.keras.Sequential()
 for units in layer_sizes[1:-1]:
     model.add(tf.keras.layers.Dense(units, activation="relu"))
 model.add(tf.keras.layers.Dense(1))
-# def optimizer1
+# def optimizer with learning rate of 0.001
 opt = tf.keras.optimizers.Adam(learning_rate=0.001)
 
 model.compile(optimizer=opt, loss=my_loss_fn)
