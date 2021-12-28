@@ -29,5 +29,5 @@ pred_y = model.predict(test_x)
 
 ax = plt.axes(projection='3d')
 ax.scatter3D(test_x[:,:1], test_x[:,1:], pred_y, cmap='red')
-ax.scatter3D(train_x[:,:1], train_x[:,1:], train_y, cmap='greens')
+ax.scatter3D(test_x[:,:1], test_x[:,1:], test_y, cmap='greens')
 plt.show()
