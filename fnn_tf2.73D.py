@@ -27,7 +27,7 @@ model.fit(train_x, train_y, epochs=2000, batch_size=2048)
 model.summary()
 pred_y = model.predict(test_x)
 
-#draw plot
+#draw plot3d
 ax = plt.axes(projection='3d')
 ax.scatter3D(test_x[:,:1], test_x[:,1:], pred_y, cmap='red')
 ax.scatter3D(test_x[:,:1], test_x[:,1:], test_y, cmap='greens')
